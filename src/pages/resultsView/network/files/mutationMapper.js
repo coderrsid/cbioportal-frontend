@@ -1118,7 +1118,7 @@ var MutationDetailsTableFormatter = (function()
 		if (frequency)
 		{
 			style = "mutation_table_allele_freq";
-			text = frequency.toFixed(2);
+			text = frequency.toFixed(4);
 			tipStyle = tipClass;
 		}
 

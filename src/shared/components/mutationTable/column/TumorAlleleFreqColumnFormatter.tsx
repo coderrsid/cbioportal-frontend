@@ -21,7 +21,7 @@ export default class TumorAlleleFreqColumnFormatter
                 arrowContent={<div className="rc-tooltip-arrow-inner"/>}
                 destroyTooltipOnHide={true}
             >
-                <span>{frequency.toFixed(2)}</span>
+                <span>{frequency.toFixed(4)}</span>
             </DefaultTooltip>
         );
     }
@@ -46,7 +46,7 @@ export default class TumorAlleleFreqColumnFormatter
         const frequency = TumorAlleleFreqColumnFormatter.getSortValue(mutations);
 
         if (frequency) {
-            return frequency.toFixed(2);
+            return frequency.toFixed(4);
         }
 
         return "";

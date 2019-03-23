@@ -26,8 +26,9 @@ export default class NormalAlleleFreqColumnFormatter
         const frequency = NormalAlleleFreqColumnFormatter.getSortValue(mutations);
 
         if (frequency) {
-            return frequency.toFixed(2);
+            return frequency.toFixed(4);
         }
+
 
         return "";
     }
